@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="notes.css">
+  	<title>Intro to Programming Nanodegree Notes</title>
+</head>
+
+<body>
+	 <div class = flex>
+	 	<div class = main-header ID='#Top'>Andy May - Notes so far...</div>
+	 	<div><img src="Andy.jpg" alt="Picture of Andy!"></div>
+	 </div>
+	 <div class = header>Contents</div>
+	 	<div class = subheader>
+	 		<a href='#Basics'>1. Basics </a><br>
+	 		<a href='#HTML'> 2. HTML </a><br>
+	 		<a href='#Boxes'> 3. Boxes </a><br>
+	 		<a href='#CSS'> 4. CSS </a>
+	 	</div>
+	 <div class= header ID='Basics'>Basics</div>
+		<div class = text>
+			<p>The internet is full of lots of servers hosting web pages which are basically HTML (HyperText Markup Language) documents my browser can interpet and present to me.<br> HTML is made up of <b>Tags, Attributes and Elements</b>. Some tags are <b><em>inline</em></b> and some tags are <b><em>block</em></b>, the latter of which essentially puts a 'box' around the content allowing for additional specific formatting. <strong>DIV</strong> is an example of a <strong>block</strong> element, whereas <strong>SPAN</strong> is an example of an <strong>inline</strong> element, but both are <em>container</em> elements. Usually an opening TAGs will need a closing TAG except in the case of <strong>void</strong> tags such as "img" or "br", void tags do not require a corresponding closing tag.
+			</p>
+			<p>
+			HTML Tags can reference text, images, audio, video or even just plain old text - all filetypes can exist on the internet! <br><br>Two of the most important things to remember from the first lesson<br><b>1. Computers are Stupid!</b><em> Computers need very specific instructions and will perform exactly what you ask for, they cannot make intuitive guesses (Well, maybe with AI but that is waaaay out of scope!)</em><br><b><strong>2. It's ok to forget!</strong></b> <em>It is not possible for everyone to remember everything, but what is important is to have knowledge of the existence of the subject matter so you know where to start looking.</em>
+			</p>
+			<p><a href = "#Top">TOP</a></p>
+	</div>
+	 <div class = header ID='HTML'>HTML</div>
+		<div class = text>
+			<p>
+				HTML is at the heart of the internet and can be thought of in 4 different elements
+			</p>
+				<ol>
+					<li>Text Content - This is what you <strong>SEE</strong>
+					<li> Markup - What it <strong>LOOKS LIKE</strong>
+					<li> Refrences - Links to images, videos or other documents.
+					<li> Links to other HTML Pages!
+				</ol>
+				<ul>
+					<li>Web pages are made up of rectangles, but remember that not all are visible.</li>
+					<li>HTML Controls the <b>structure</b> of a web page whereas CSS controls the <b>style</b> of the page and both are 'languages'.</li>
+					<li>When programmers talk about the <b>DOM</b> they are talking about the structure of the page</li>
+					<li>Browsers take the HTML Tag and turn them into elements of a tree</li>
+					<li><b>Boxes</b> are defined with DIV tags</li>
+					<li>Use <b>CLASS</b> attributes to define styles</li>
+					<li>HTML tags can belong to multiple classes</li>
+					<li>Use SPAN and DIV to group related content together</li>
+				</ul>
+			<p><a href = "#Top">TOP</a></p>
+	</div>
+	 <div class = header ID='Boxes'>Boxes</div>
+	<div class = subheader>The Box Model</div>
+		<div class = text>
+			<p> When creating a structured document you must first divide everything up into boxes and define those boxes with <b>DIV</b> tags. You can also give each element a <b>CLASS</b> attribute so that you can easily apply styles afterwards. Tag's can belong to multiple Classes.
+			</p>
+			<p>Boxes have 4 elements: 
+			</p>
+				<ol>
+					<li>Margin</li>	
+					<li>Border</li>
+					<li>Padding</li>
+					<li>Content</li>
+				</ol>
+				<br>
+				The code <b>box-sizing:border-box</b> will allow you to set the size of the total box including the border and margin, which makes it much easier to determine the actual size of the box rather than just the content. In addition, you can choose to set the size in terms of percentage of screen rather than defined pixel count!<br>
+			<p><a href = "#Top">TOP</a></p>
+	</div>
+	<div class = subheader >Box Positioning</div>
+		<div class = text>
+			<p> DIV's are BLOCK elements, so by default they will take up the whole width of the page. Adding the rule "display:flexi;" to the appropriate CSS will override this behaviour and let DIV's appear next to each other.<br>
+			<br>
+			</p>
+			<p> When creating web sites the procedue to follow is: <b>Code</b> --> <b>Test</b> --> <b>Refine</b>.
+			</p>
+				<ol>
+					<li>Look for narural boxes</li>
+					<li>Look for repeated styles</li>
+					<li>Write your HTML</li>
+					<li>Apply Styles (biggest to smallest)</li>
+					<li>Fix things</li>
+				</ol>
+			<p>
+			You can also use developer tools in Chrome to test changes on the fly without having to change the code each time. If it goes wrong, just hit F5 and it will refresh to the saved HTML.
+			</p>
+			<p><a href = "#Top">TOP</a></p>
+		</div>
+	<div class = header ID='CSS'>CSS</div>
+		<div class = text>
+			<p>CSS (Cascading Style Sheets) allows you to add style to the website or text and correctly structured will allow programmers to avoid repitition. We do not want to have to repeat the same style code over and over again since it wastes time, is difficult to manage and susceptible to errors. What we want is for the code to <b><em>cascade</em></b> through the site and only well structured code will allow that!<br><br>
+			There is a CSS library available to use by following this <a href="https://developer.mozilla.org/en-us/docs/web/CSS">link</a>.<br><br>
+			CSS can be stored either in the HTML or within a separate CSS file of it's own, which is usually the better option for all but the most basic of sites. If you do have a separate CSS file you must locate this within the same folder as the HTML file referencing it. To reference it, in the HEAD tag include the stylesheet "link" reference line. (Type link and hit tab!)
+			</p>
+			<p><a href = "#Top">TOP</a></p>
+		</div>
+
+
+	</body>
+
+</html>
